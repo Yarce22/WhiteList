@@ -1,18 +1,33 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="WhiteList">
 	<main class="main-container">
-		<h1 class="main-title">UNETE A LA RED TECNOLOGICA MAS GRANDE</h1>
+		<h1 class="main-title">UNETE A LA RED <span> TECNOLOGICA </span> <br> MÁS GRANDE</h1>
+		<Card />
 	</main>
 </Layout>
 
 <style>
 	.main-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		height: 100vh;
-		background-image: url('../images/background.png');
+		background-image: url('../assets/images/background.png');
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+	.main-container h1 {
+		text-align: center;
+		margin: 0 40px 52px;
+		font-weight: 500;
+		font-size: 2.4rem;
+	}
+	.main-container h1 span{
+		color: blue
 	}
 </style>

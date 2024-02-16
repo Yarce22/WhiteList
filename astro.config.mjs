@@ -4,4 +4,8 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://Yarce22.github.io',
   base: '/dist',
+  buildOptions: {
+    baseUrl: '/Yarce22',
+    out: '/dist',
+  },
 });

@@ -53,6 +53,9 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 		background-color: transparent;
 		border: none;
 	}
+	.main-card-container .email-input input, .main-card-container .code-input input:focus-visible{
+		outline: none;
+	}
 	.main-card-container .send-button {
 		width: 127px;
 		height: 38px;
@@ -62,5 +65,13 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 		border: none;	
 		color: var(--background-input-card);
 		font-weight: 700;
+	}
+	.main-card-container .send-button:hover {
+		cursor: pointer;
+		background-color: var(--background-input-card);
+		color: var(--text-color);
+	}
+	.main-card-container .send-button:active {
+		scale: 1.1;
 	}
 </style>

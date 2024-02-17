@@ -8,7 +8,7 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 	<h2>REGISTRATE</h2>
 	<div class="email-input">
 		<Image src={emailIconW} alt="email-icon" class="email-icon" />
-		<input type="email" placeholder="EMAIL">
+		<input type="email" placeholder="EMAIL" />
 	</div>
 	<div class="code-input">
 		<Image src={codeIconW} alt="code-icon" class="code-icon" />
@@ -26,7 +26,7 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 		gap: 20px;
 		width: 367px;
 		height: 322px;
-		background-color: var(--background-card);
+		/* background-color: var(--background-card); */
 		border-radius: 25px;
 	}
 	.main-card-container h2 {
@@ -39,8 +39,9 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 		align-items: center;
 		width: 260px;
 		height: 38px;
-		background-color: var(--background-input-card);
+		/* background-color: var(--background-input-card); */
 		border-radius: 25px;
+		border: 1px solid var(--text-color-hover);
 	}
 	.main-card-container .email-input .email-icon, .main-card-container .code-input .code-icon{
 		margin: 0 10px 0 20px;
@@ -48,7 +49,7 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 		height: 20px;
 	}
 	.main-card-container .email-input input, .main-card-container .code-input input {
-		widows: 100%;
+		width: 100%;
 		color: var(--text-color);
 		background-color: transparent;
 		border: none;

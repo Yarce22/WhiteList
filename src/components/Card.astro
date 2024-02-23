@@ -1,21 +1,13 @@
 ---
-import { Image } from 'astro:assets';
-import emailIconW from '../assets/icons/emailIconW.png';
-import codeIconW from '../assets/icons/codeIconW.svg';
+import Input from './Input.astro';
+import Button from './Button.astro';
 ---
 
-<div class="main-card-container">
+<form class="main-card-container">
 	<h2>REGISTRATE</h2>
-	<div class="email-input">
-		<Image src={emailIconW} alt="email-icon" class="email-icon" />
-		<input type="email" placeholder="EMAIL" />
-	</div>
-	<div class="code-input">
-		<Image src={codeIconW} alt="code-icon" class="code-icon" />
-		<input type="password" placeholder="CÓDIGO">
-	</div>
-	<button class="send-button" type="submit">ENVIAR</button>
-</div>
+	<Input />
+	<Button />
+</form>
 
 <style>
 	.main-card-container {
@@ -23,56 +15,15 @@ import codeIconW from '../assets/icons/codeIconW.svg';
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap: 20px;
+		gap: 30px;
 		width: 367px;
 		height: 322px;
-		/* background-color: var(--background-card); */
+		background-color: var(--background-card);
 		border-radius: 25px;
 	}
 	.main-card-container h2 {
 		margin-bottom: 20px;
 		font-weight: 500;
 		font-size: 2.4rem;
-	}
-	.main-card-container .email-input, .main-card-container .code-input{
-		display: flex;
-		align-items: center;
-		width: 260px;
-		height: 38px;
-		/* background-color: var(--background-input-card); */
-		border-radius: 25px;
-		border: 1px solid var(--text-color-hover);
-	}
-	.main-card-container .email-input .email-icon, .main-card-container .code-input .code-icon{
-		margin: 0 10px 0 20px;
-		width: 20px;
-		height: 20px;
-	}
-	.main-card-container .email-input input, .main-card-container .code-input input {
-		width: 100%;
-		color: var(--text-color);
-		background-color: transparent;
-		border: none;
-	}
-	.main-card-container .email-input input, .main-card-container .code-input input:focus-visible{
-		outline: none;
-	}
-	.main-card-container .send-button {
-		width: 127px;
-		height: 38px;
-		margin-top: 16px;
-		border-radius: 25px;
-		background-color: var(--text-color-hover);
-		border: none;	
-		color: var(--background-input-card);
-		font-weight: 700;
-	}
-	.main-card-container .send-button:hover {
-		cursor: pointer;
-		background-color: var(--background-input-card);
-		color: var(--text-color);
-	}
-	.main-card-container .send-button:active {
-		scale: 1.1;
 	}
 </style>
